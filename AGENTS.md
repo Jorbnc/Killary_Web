@@ -1,9 +1,10 @@
-# Killary Backup — sitio público
+# Killary — sitio público del negocio
 
-- Mantener un sitio estático HTML/CSS, adaptable y sin dependencias de compilación.
-- La raíz de `main` es la fuente prevista de GitHub Pages; conservar los enlaces internos relativos.
-- El repositorio remoto es `Jorbnc/Killary_Web`. La URL prevista es `https://jorbnc.github.io/Killary_Web/`.
-- Mantener `docs/publicacion.md` alineado con las URLs y el despliegue real; distinguir sincronización Git, despliegue Pages y verificación OAuth.
-- No incorporar bases de datos, presupuestos, respaldos, credenciales OAuth ni contraseñas. No leer archivos del proyecto operativo para validar este sitio.
-- No inventar un correo público; usar el contacto aprobado `https://github.com/jorbnc` hasta que el usuario indique otro.
-- Verificar enlaces internos, anclas, archivos del sitio y `git diff --check` al editar. No hay una suite de pruebas instalada.
+- Este sitio presenta al negocio Killary. No mostrar funciones internas de respaldo, OAuth, restic o rclone en la interfaz ni en las políticas de esta web.
+- Mantener HTML/CSS estático, adaptable y sin dependencias de compilación.
+- La raíz de `main` es la fuente de Pages; conservar enlaces internos relativos.
+- Remoto: `Jorbnc/Killary_Web`. URL: `https://jorbnc.github.io/Killary_Web/`.
+- No inventar servicios, rubro, dirección, horarios, precios, teléfono ni correo. Contacto aprobado: `https://github.com/jorbnc`, hasta que el usuario indique otro.
+- No incorporar datos operativos, credenciales ni documentos privados del negocio.
+- Mantener `docs/publicacion.md` alineado con el despliegue real.
+- Comprobar enlaces, anclas, ausencia de contenido técnico retirado y `git diff --check`. No hay una suite de pruebas instalada.

@@ -1,26 +1,25 @@
-# Killary Backup
+# Killary — sitio del negocio
 
-Sitio informativo de la herramienta privada de respaldos de Killary, con política de privacidad y condiciones de uso para su configuración OAuth de Google Drive.
+Página pública de presentación de Killary, con contacto, política de privacidad del sitio y condiciones de uso.
 
-## Archivos
+## Contenido
 
-- `index.html`: portada y descripción del funcionamiento.
-- `privacidad.html`: tratamiento de datos y autorizaciones.
-- `condiciones.html`: condiciones de uso privado.
-- `styles.css`: diseño adaptable a escritorio y móvil.
-- `.nojekyll`: publicación estática en GitHub Pages.
-- `docs/publicacion.md`: despliegue, URLs de Branding y verificación de propiedad.
+- `index.html`: presentación y contacto.
+- `privacidad.html`: información sobre los datos de visitantes y el alojamiento.
+- `condiciones.html`: condiciones de consulta de la web.
+- `styles.css`: diseño adaptable, sin dependencias externas.
+- `docs/publicacion.md`: publicación y direcciones del sitio.
 
-HTML y CSS sin dependencias, scripts de seguimiento, formularios ni compilación. Para una vista previa, abrir `index.html` en el navegador.
+HTML y CSS sin compilación, formularios ni rastreadores añadidos. Abrir `index.html` en el navegador para una vista previa.
 
-## Publicación
+## GitHub Pages
 
-En este repositorio, configurar **Settings → Pages → Deploy from a branch → main → /(root)**. La URL prevista es `https://jorbnc.github.io/Killary_Web/`; confirmar el despliegue en Pages antes de usarla en Google Cloud.
+Repositorio: `Jorbnc/Killary_Web`. Configurar **Settings → Pages → Deploy from a branch → main → /(root)**.
 
-Consultar las [instrucciones completas](docs/publicacion.md). El sitio es independiente del proyecto operativo de Killary y no contiene datos del negocio, presupuesto, respaldos ni credenciales.
+Dirección: `https://jorbnc.github.io/Killary_Web/`. Verificar el despliegue antes de compartir los enlaces. Mantener rutas relativas para que funcionen bajo el nombre del repositorio.
 
-## Mantenimiento
+## Contenido comercial
 
-Revisar que privacidad y condiciones correspondan al funcionamiento real antes de publicar cambios. Mantener enlaces relativos entre las páginas. El contacto público es el perfil de GitHub `jorbnc`; no añadir correos u otros datos personales sin indicación de su titular.
+Hasta que el responsable proporcione los datos, mantener una presentación general sin inventar rubro, dirección, horarios, precios, productos ni teléfono. El contacto público indicado es el perfil `jorbnc` de GitHub. El usuario puede sustituirlo por los canales comerciales que confirme.
 
-`dist/` contiene, cuando se genera, una copia ZIP para carga manual; se excluye de Git para evitar duplicar los archivos fuente. La aplicación de respaldos y su autorización OAuth se configuran aparte: publicar el sitio no las activa.
+La carpeta `dist/` contiene una copia ZIP opcional del sitio; queda fuera de Git. La fuente de verdad de las páginas son los archivos HTML y CSS.

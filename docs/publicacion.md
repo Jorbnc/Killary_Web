@@ -1,42 +1,33 @@
-# Publicación en GitHub Pages
+# Publicación de la web de Killary
 
-El repositorio independiente del sitio es **Jorbnc/Killary_Web**. El usuario lo creó y pidió trasladar aquí los archivos públicos y sincronizarlos con el remoto. La portada, privacidad, condiciones y estilos se encuentran en la raíz.
+## Repositorio y despliegue
 
-## Actualizar el repositorio
+El sitio comercial se mantiene en **Jorbnc/Killary_Web**. Para publicar, configurar en **Settings → Pages** la fuente **Deploy from a branch**, rama **main** y carpeta **/(root)**. Los cambios posteriores se publican al subir los commits a esa rama.
 
-Desde este repositorio, revisar los cambios antes de preparar el commit. Agregar únicamente los archivos públicos pertinentes, crear un commit y ejecutar `git push origin main`. No volver a ejecutar `git remote add origin` si ese remoto ya existe; consultar su valor con `git remote -v`.
+Desde este repositorio, revisar los archivos, crear un commit y ejecutar `git push origin main`. El remoto ya existe; no repetir `git remote add origin`. El error inicial `src refspec main does not match any` se debía a que todavía no había ningún commit.
 
-El error `src refspec main does not match any` observado durante la creación ocurrió porque la rama todavía no tenía ningún commit. El commit inicial debe existir antes del primer `git push -u origin main`.
+El despliegue y el repositorio son estados distintos. Revisar Pages/Actions y abrir las páginas sin iniciar sesión para comprobar que están disponibles.
 
-## Activar Pages
+## Direcciones
 
-1. Abrir [Jorbnc/Killary_Web](https://github.com/Jorbnc/Killary_Web) en GitHub.
-2. Entrar en **Settings → Pages → Build and deployment**.
-3. Elegir **Deploy from a branch**, rama **main**, carpeta **/(root)**, y guardar.
-4. Esperar a que termine el despliegue y usar **Visit site**.
-5. Abrir las tres páginas sin iniciar sesión y comprobar enlaces, lectura y disposición en móvil antes de registrarlas en Branding.
-
-El repositorio sincronizado no garantiza que Pages esté activado. Consultar su estado en Settings → Pages y en Actions. Los archivos están preparados para publicarse como estáticos, sin instalar Node ni compilar.
-
-Referencias: [crear un sitio Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site), [fuente de publicación](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site).
-
-## URLs para Branding
-
-Usar estas URLs cuando su despliegue esté confirmado. Respetar las mayúsculas de `Killary_Web`:
-
-| Campo | Valor |
+| Página | URL |
 |---|---|
-| Application home page | `https://jorbnc.github.io/Killary_Web/` |
-| Application privacy policy link | `https://jorbnc.github.io/Killary_Web/privacidad.html` |
-| Application terms of service link | `https://jorbnc.github.io/Killary_Web/condiciones.html` |
-| Authorized domains | `jorbnc.github.io` |
+| Inicio | `https://jorbnc.github.io/Killary_Web/` |
+| Privacidad del sitio | `https://jorbnc.github.io/Killary_Web/privacidad.html` |
+| Condiciones del sitio | `https://jorbnc.github.io/Killary_Web/condiciones.html` |
+| Dominio del sitio | `jorbnc.github.io` |
 
-En Branding, mantener **Killary Backup** como nombre y el correo real del usuario como soporte/contacto. El correo público del sitio no se ha indicado; las páginas identifican a `jorbnc`, enlazan su perfil y remiten al correo de asistencia de OAuth. Publicar el sitio no verifica automáticamente la marca ni la propiedad ante Google, y tampoco activa los respaldos.
+Estas políticas describen exclusivamente esta web comercial. Su publicación no acredita que otras aplicaciones que traten datos mediante las API de Google tengan la información de privacidad que requieren. No presentar estas políticas como documentación de funciones que no describen.
 
-Si Google pide comprobar la propiedad, usar la cuenta propietaria/editora del proyecto OAuth en **Google Search Console**. Añadir una propiedad de **prefijo de URL** con la dirección exacta del sitio y seguir el método HTML ofrecido. Añadir la etiqueta `google-site-verification` proporcionada por Google al `<head>` de `index.html`, o publicar el archivo de verificación en la ubicación exacta indicada. No inventar el token. Volver a desplegar antes de verificar y conservar después la prueba de propiedad. Si Google exige otra dirección o dominio, resolver ese requisito concreto antes de dar la marca por aprobada. [Verificación de propiedad](https://support.google.com/webmasters/answer/9008080), [requisitos de Branding](https://support.google.com/cloud/answer/15549049).
+## Verificación de propiedad
 
-## Paquete manual y vista previa
+Si se necesita verificar propiedad en Google, entrar en Search Console con la cuenta correspondiente, añadir una propiedad de prefijo de URL y seguir el método HTML ofrecido. Publicar la etiqueta o archivo exacto entregado por Google y verificar después del despliegue; conservarlo posteriormente. No inventar códigos de verificación.
 
-Abrir `index.html` en un navegador para revisar el sitio local. Todos los recursos propios y enlaces internos son relativos.
+- [Publicar en GitHub Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site).
+- [Verificar propiedad en Google](https://support.google.com/webmasters/answer/9008080).
+- [Configurar Branding](https://console.cloud.google.com/auth/branding).
+- [Requisitos de Branding](https://support.google.com/cloud/answer/15549049).
 
-La copia opcional `dist/killary-backup-pages.zip` contiene únicamente `index.html`, `privacidad.html`, `condiciones.html`, `styles.css` y `.nojekyll` en su raíz. Se excluye de Git porque duplica el sitio y puede quedar desactualizada. Si se utiliza para cargar archivos manualmente, extraerlo antes: subir el ZIP no despliega su contenido. El flujo normal de mantenimiento es actualizar los archivos fuente y hacer commit/push.
+## Vista previa y archivo opcional
+
+Abrir `index.html` en un navegador. `dist/killary-web-pages.zip`, si está presente, contiene los tres HTML, CSS y `.nojekyll`. Es una copia de distribución excluida de Git; el mantenimiento normal se hace en los archivos fuente.
